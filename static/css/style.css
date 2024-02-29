@@ -12,4 +12,6 @@ table, td, th {
     border-color: orange;
     border-collapse: collapse;
 }
-
+p#pink{
+    color:deeppink; font-weight:bolder;
+}
