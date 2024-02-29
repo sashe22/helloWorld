@@ -6,3 +6,10 @@ h2{
     color:darkgreen; font-size:small;
 }
 
+table, td, th {
+    border-style: solid;
+    border-width: 3px;
+    border-color: orange;
+    border-collapse: collapse;
+}
+
