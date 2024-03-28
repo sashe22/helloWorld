@@ -1,11 +1,14 @@
+{% extends "base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Page</title>
+    {% block page_title %}Contact Page{% endblock %}
+    {% block page_head %}Contact Page{% endblock %}
     <link href="https://getbootstrap.com/docs/5.3/forms/overview/#overview" rel="stylesheet">
 </head>
 <body>
+{% block page_content %}
 
     <div class="container">
 
@@ -73,6 +76,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha3..."></script>
 
-
+{% endblock %}
 </body>
 </html>
