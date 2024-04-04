@@ -41,7 +41,7 @@
         <br>{{ student['last_name'] }}
     {% endif %}
   </div>
-<!--Adding email as option for student entry-->
+
   <div class="col-md-4">
     <label for="email" class="form-label"><strong>Email</strong></label>
     {% if action and action in ['create', 'update'] %}
@@ -110,10 +110,9 @@
             <br>{{ 'Yes' if student and student['is_honors'] == True else 'No' }}
             {% endif %}
       </label>
+    </div>
   </div>
 
-
-  </div>
   <div class="col-12 text-center">
     {% if action and action in ['create', 'update'] %}
     <button class="btn btn-primary" type="submit">{{ 'Add' if action=='create' else 'Update' }} Student</button>
