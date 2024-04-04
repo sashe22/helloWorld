@@ -7,6 +7,7 @@ class Student(db.Model):
     student_id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(30), nullable=False)
     last_name = db.Column(db.String(50), nullable=False)
+    # creating email column
     email = db.Column(db.String(100), nullable=False)
     major_id = db.Column(db.Integer, db.ForeignKey('major.major_id'))
     birth_date = db.Column(db.DateTime, nullable=False)
@@ -18,6 +19,7 @@ class Student(db.Model):
     def __init__(self, first_name, last_name, major_id, birth_date, is_honors, email):
         self.first_name = first_name
         self.last_name = last_name
+        # accessing email variable
         self.email = email
         self.major_id = major_id
         self.birth_date = birth_date
